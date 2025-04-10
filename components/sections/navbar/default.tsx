@@ -6,8 +6,7 @@ import {
   NavbarRight,
 } from "../../ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "../../ui/sheet";
-import { Menu } from "lucide-react";
-import LaunchUI from "../../logos/launch-ui";
+import { LucideCableCar, Menu } from "lucide-react";
 import { siteConfig } from "@/config/site";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";
@@ -38,18 +37,19 @@ interface NavbarProps {
 }
 
 export default function Navbar({
-  logo = <LaunchUI />,
-  name = "Launch UI",
+  logo = <LucideCableCar />,
+  name = "Sua Logo",
   homeUrl = siteConfig.url,
   mobileLinks = [
-    { text: "Getting Started", href: siteConfig.url },
-    { text: "Components", href: siteConfig.url },
-    { text: "Documentation", href: siteConfig.url },
+    { text: "Primeiros passos", href: siteConfig.url },
+    { text: "Conteúdos", href: siteConfig.url },
+    { text: "Serviços", href: siteConfig.url },
+    { text: "FAQ", href: siteConfig.url },
   ],
   actions = [
-    { text: "Sign in", href: siteConfig.url, isButton: false },
+    { text: "Entrar", href: siteConfig.url, isButton: false },
     {
-      text: "Get Started",
+      text: "Por onde começar?",
       href: siteConfig.url,
       isButton: true,
       variant: "default",

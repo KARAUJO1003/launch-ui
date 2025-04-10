@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "@/app/globals.css";
-import { inter } from "@/lib/fonts";
+import { quicksand } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/contexts/theme-provider";
 import { siteConfig } from "../config/site";
 
@@ -62,8 +62,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ colorScheme: "dark" }} className="dark">
-      <body className={`${inter.className} bg-background antialiased`}>
+    <html lang="en" style={{ colorScheme: "" }} className="light">
+      <body className={`${quicksand.className} bg-background antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

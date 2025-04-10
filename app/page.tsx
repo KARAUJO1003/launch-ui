@@ -10,7 +10,7 @@ import Pricing from "../components/sections/pricing/default";
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full overflow-hidden bg-background text-foreground">
+    <main className="bg-background text-foreground min-h-screen w-full overflow-hidden">
       <Navbar />
       <Hero />
       <Logos />
